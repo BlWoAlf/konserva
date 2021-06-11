@@ -1,0 +1,20 @@
+.header__main-section{
+    padding: 8px 0px;
+    min-height: 141px;
+    background-color: $white-color;
+}
+@media (min-width: 768px){
+    .header__main-section-cotainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header__menu-section{
+    @extend %flex-center-row;
+    height: 69px;
+    background: $header-menu-bg;
+    border-top: solid 6px $header-menu-bg-border;
+    border-bottom: solid 6px $header-menu-bg-border;
+}

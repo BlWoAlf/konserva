@@ -1,0 +1,16 @@
+.prod-p__image{
+    width: 100%;
+    max-width: 630px;
+    margin-bottom: 25px;
+    img{
+        width: 100%;
+    }
+}
+
+.prod-p__button{
+    width: 231px;
+    height: 40px;
+    background: $gradient-orange;
+    border-radius: 20px;
+    color: $white-color;
+}

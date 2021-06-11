@@ -1,0 +1,234 @@
+$primary-font: 'Montserrat';
+$secondary-font: 'Montserrat Alternates';
+
+$standart-text-size: 14px;
+$standart-style: normal;
+$standart-weight: normal;
+$header-wight: bold;
+
+$standart-text-line-height: 21px;
+
+body{
+    font-family: $primary-font;
+    font-style: $standart-style;
+    font-weight: $standart-weight;
+}
+
+.h1-header{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 48px;
+    font-weight: $header-wight;
+    text-transform: uppercase;
+    text-align: center;
+    @media(min-width: 768px){
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.h1-header_simple, .h1-header-page{
+    font-family: $secondary-font;
+    text-transform: none;
+    text-align: left;
+}
+
+.h1-header-page{
+    font-size: 32px;
+    line-height: 36px;
+    @media(min-width: 768px){
+        font-size: 42px;
+        line-height: 50px;
+    }
+    @media(min-width: 992px){
+        font-size: 48px;
+        line-height: 62px;
+    }
+}
+
+.h1-header_instr{
+    font-family: $secondary-font;
+}
+
+.h2-header{
+    font-family: $secondary-font;
+    font-weight: $header-wight;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+.text{
+    font-size: $standart-text-size;
+    line-height: $standart-text-line-height;
+    margin-bottom: 16px;
+}
+
+.logo__text{
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    @media (min-width: 576px){
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+
+.contacts{
+    font-family: $secondary-font;
+    .contacts__phone{
+        font-size: 20px;
+        font-weight: bold;
+        @media (min-width: 576px){
+            font-size: 24px;
+        }
+    }
+}
+.header__contacts{
+    font-size: 14px;
+    line-height: 36px;
+    text-align: right;
+    font-weight: bold;
+}
+.footer__contacts{
+    .contact-info{
+        text-align: right;
+    }
+    .contact-info__phone{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .contact-info__address{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+
+.feedback-button, .product__button, .prod-p__button{
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.product__button{
+    font-size: 16px;
+    @media(min-width: 576px){
+        font-size: 18px;
+    }
+    @media(min-width: 992px){
+        font-size: 16px;
+    }
+    @media(min-width: 1200px){
+        font-size: 18px;
+    }
+}
+
+.menu{
+    a{
+        font-weight: bold;
+        font-size: 16px;
+        text-align: left;
+        @media (min-width: 1200px){
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+}
+.header__main-menu{
+    a{
+        font-family: $secondary-font;
+        line-height: 36px;
+    }
+}
+.footer__menu{
+    a{
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+}
+
+.footer__info{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+}
+
+.garant__number{
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 36px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.garant__name{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.garant__decr{
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.product__info{
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0px 1px 1px $black-color;
+    @media(min-width: 576px){
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @media(min-width: 992px){
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @media(min-width: 1200px){
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.instr__number{
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    @media(min-width: 992px){
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.instr__text{
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-shadow: 0px 1px 1px $black-color;
+    @media(min-width: 992px){
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.table{
+    font-size: 14px;
+    line-height: 21px;
+    th{
+        font-weight: normal;
+    }
+}
+
+.gallary__descr{
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.menu{
+    a{
+        @extend %clean-link;
+    }
+}
+.header__main-menu{
+    .menu{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        a{
+            padding: 8px -1px;
+            color: $primary-text-color;
+            @media(min-width: 992px){
+                color: $white-color;
+                padding: 8px 5px;
+            }
+        }
+    }
+}
+.footer__menu{
+    li{
+        margin-bottom: 28px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        a{
+            color: $white-color;
+        }
+    }
+}

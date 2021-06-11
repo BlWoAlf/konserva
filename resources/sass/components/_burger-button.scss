@@ -1,0 +1,16 @@
+.burger-button{
+    @extend %flex-center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    i{
+        font-size: 34px;
+        color: $white-color;
+    }
+    @media(min-width: 992px){
+        display: none;
+    }
+}
+.header__burger-button{
+    margin-left: auto;
+}

@@ -1,0 +1,40 @@
+.header__contacts{
+    color: $primary-text-color;
+    .contacts__phone{
+        @extend %clean-link;
+        color: $primary-text-color;
+        padding-left: 15px;
+    }
+}
+.contacts__button{
+    margin-top: 5px;
+}
+
+.footer__contacts{
+    .contacts__item{
+        @extend %flex-center-row;
+        margin-bottom: 25px;
+    }
+    .contacts__phone{
+        @extend %clean-link;
+        color: $white-color;
+    }
+    .contact-info{
+        max-width: 218px;
+        color: $white-color;
+    }
+}
+
+.contacts__phone-a{
+    white-space: nowrap;
+}
+
+.footer__contacts-icon{
+    margin-right: 22px;
+    i{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 36px;
+        color: $orange-color;
+    }
+}
