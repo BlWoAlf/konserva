@@ -485,13 +485,17 @@
   align-items: center;
 }
 
-.product, .logo a, .horizontal-list, .instr__item, .footer__contacts .contacts__item, .header__menu-section {
+.product, .logo a, .horizontal-list, .header__logo, .instr__item, .footer__contacts .contacts__item, .header__menu-section {
   display: flex;
   flex-direction: row;
 }
 
 .instr__item, .footer__contacts .contacts__item, .header__menu-section {
   align-items: center;
+}
+
+.header__logo {
+  justify-content: center;
 }
 
 .menu a, .footer__contacts .contacts__phone, .header__contacts .contacts__phone, .logo a, .pic-link a {
@@ -18368,8 +18372,13 @@ body {
 .header__contacts {
   font-size: 14px;
   line-height: 36px;
-  text-align: right;
+  text-align: center;
   font-weight: bold;
+}
+@media (min-width: 576px) {
+  .header__contacts {
+    text-align: right;
+  }
 }
 
 .footer__contacts .contact-info {
@@ -18427,15 +18436,28 @@ body {
   line-height: 36px;
 }
 
+.footer__menu {
+  text-align: center;
+}
 .footer__menu a {
   line-height: 22px;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  .footer__menu {
+    text-align: left;
+  }
 }
 
 .footer__info {
   font-size: 14px;
   line-height: 21px;
-  text-align: right;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .footer__info {
+    text-align: right;
+  }
 }
 
 .garant__number {
@@ -18635,6 +18657,12 @@ body {
   margin-left: -93px;
 }
 
+@media (min-width: 576px) {
+  .header__logo {
+    display: block;
+  }
+}
+
 .header__contacts {
   color: #2B2B2B;
 }
@@ -18647,6 +18675,9 @@ body {
   margin-top: 5px;
 }
 
+.footer__contacts {
+  margin: 0 auto;
+}
 .footer__contacts .contacts__item {
   margin-bottom: 25px;
 }
@@ -18656,6 +18687,11 @@ body {
 .footer__contacts .contact-info {
   max-width: 218px;
   color: #FFFFFF;
+}
+@media (min-width: 576px) {
+  .footer__contacts {
+    margin-right: auto;
+  }
 }
 
 .contacts__phone-a {
@@ -18703,6 +18739,9 @@ body {
   }
 }
 
+.footer__menu {
+  margin-bottom: 25px;
+}
 .footer__menu li {
   margin-bottom: 28px;
 }
@@ -18726,7 +18765,7 @@ body {
   transform: rotate(-90deg);
   left: -18px;
   top: 22px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .garant__item {

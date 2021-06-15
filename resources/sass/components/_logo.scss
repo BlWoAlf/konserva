@@ -29,3 +29,10 @@
     left: 50%;
     margin-left: -93px;
 }
+
+.header__logo{
+    @extend %flex-horizontal-center;
+    @media(min-width: 576px) {
+        display: block;
+    }
+}

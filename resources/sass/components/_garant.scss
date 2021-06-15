@@ -10,7 +10,7 @@
     transform: rotate(-90deg);
     left: -18px;
     top: 22px;
-    cursor: pointer;
+    cursor: default;
 }
 .garant__item{
     @extend %flex-center-column;
