@@ -18690,7 +18690,7 @@ body {
 }
 @media (min-width: 576px) {
   .footer__contacts {
-    margin-right: auto;
+    margin: 0;
   }
 }
 
