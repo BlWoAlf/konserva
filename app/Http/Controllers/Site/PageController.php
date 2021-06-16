@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Site;
 
 use App\Helpers\Adfm\Dev;
 use App\Models\Adfm\File;
-use App\Models\Adfm\Product;
 use App\Http\Controllers\Controller;
 use App\Models\DumpTruck;
 use Aws\S3\S3Client;
@@ -16,6 +15,7 @@ use League\Flysystem\Adapter\Local;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
 use League\Flysystem\Filesystem;
 use League\Glide\Server;
+use App\Models\Adfm\Catalog\Product;
 
 
 class PageController extends Controller
@@ -23,7 +23,9 @@ class PageController extends Controller
 
     public function showMainPage()
     {
-        return view('adfm::public.index');
+        $products = Product::inRandomOrder()->limit(6)->get();
+
+        return view('adfm::public.index', compact('products'));
     }
 
     public function showPage($slug)

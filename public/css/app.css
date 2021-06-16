@@ -18854,6 +18854,9 @@ body {
     width: 168px;
   }
 }
+.product a {
+  text-decoration: none;
+}
 
 .product__info {
   margin-right: 10px;

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae40ad941b010d46c5574a9d5c6ab276",
+    "content-hash": "f7e1b10d4caeabef46a1f4328d7ad5b5",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -129,16 +129,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.184.1",
+            "version": "3.184.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2450c0568aae59842b5e4cdf50a12c213ed9640e"
+                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2450c0568aae59842b5e4cdf50a12c213ed9640e",
-                "reference": "2450c0568aae59842b5e4cdf50a12c213ed9640e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34e6b2abfb9d9d2f619c7218fb366371099e26b7",
+                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7",
                 "shasum": ""
             },
             "require": {
@@ -213,9 +213,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.4"
             },
-            "time": "2021-06-10T18:19:17+00:00"
+            "time": "2021-06-15T18:14:30+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2618,16 +2618,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.46.0",
+            "version": "v8.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a18266c612e0e6aba5e0174b3c873d2d217dccfb"
+                "reference": "93db226946453f4285558b7c3166ddb6e7ea5400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a18266c612e0e6aba5e0174b3c873d2d217dccfb",
-                "reference": "a18266c612e0e6aba5e0174b3c873d2d217dccfb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/93db226946453f4285558b7c3166ddb6e7ea5400",
+                "reference": "93db226946453f4285558b7c3166ddb6e7ea5400",
                 "shasum": ""
             },
             "require": {
@@ -2782,7 +2782,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-06-08T13:36:46+00:00"
+            "time": "2021-06-15T14:00:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5067,16 +5067,16 @@
         },
         {
             "name": "studio-42/elfinder",
-            "version": "2.1.58",
+            "version": "2.1.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "3802892cf32e999f08143107c5686e84ce837164"
+                "reference": "06ada3132cefd057e1d89cb016f8c82473d420d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/3802892cf32e999f08143107c5686e84ce837164",
-                "reference": "3802892cf32e999f08143107c5686e84ce837164",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/06ada3132cefd057e1d89cb016f8c82473d420d4",
+                "reference": "06ada3132cefd057e1d89cb016f8c82473d420d4",
                 "shasum": ""
             },
             "require": {
@@ -5123,9 +5123,9 @@
             "homepage": "http://elfinder.org",
             "support": {
                 "issues": "https://github.com/Studio-42/elFinder/issues",
-                "source": "https://github.com/Studio-42/elFinder/tree/2.1.58"
+                "source": "https://github.com/Studio-42/elFinder/tree/2.1.59"
             },
-            "time": "2021-06-09T08:25:39+00:00"
+            "time": "2021-06-13T15:04:24+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -7833,17 +7833,65 @@
             "time": "2021-06-08T07:51:33+00:00"
         },
         {
+            "name": "wtolk/adfm-catalog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wtolk/adfm-catalog.git",
+                "reference": "aa6755303d3401ce94d6e5ba8dee1b03d121ccdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wtolk/adfm-catalog/zipball/aa6755303d3401ce94d6e5ba8dee1b03d121ccdb",
+                "reference": "aa6755303d3401ce94d6e5ba8dee1b03d121ccdb",
+                "shasum": ""
+            },
+            "require": {
+                "wtolk/adfm": "*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Wtolk\\AdfmCatalog\\Providers\\AdfmCatalogServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wtolk\\AdfmCatalog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "wtolk.ru",
+                    "email": "web@wtolk.ru"
+                }
+            ],
+            "description": "catalog package",
+            "support": {
+                "issues": "https://github.com/wtolk/adfm-catalog/issues",
+                "source": "https://github.com/wtolk/adfm-catalog/tree/master"
+            },
+            "time": "2021-06-16T09:09:08+00:00"
+        },
+        {
             "name": "wtolk/adfm-elfinder",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wtolk/adfm-elfinder.git",
-                "reference": "11b99f7af962475c334aafb728af94376792c3a1"
+                "reference": "61bdc71ddcd4f326dc4e7bb08b0a72e7ad8366ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wtolk/adfm-elfinder/zipball/11b99f7af962475c334aafb728af94376792c3a1",
-                "reference": "11b99f7af962475c334aafb728af94376792c3a1",
+                "url": "https://api.github.com/repos/wtolk/adfm-elfinder/zipball/61bdc71ddcd4f326dc4e7bb08b0a72e7ad8366ac",
+                "reference": "61bdc71ddcd4f326dc4e7bb08b0a72e7ad8366ac",
                 "shasum": ""
             },
             "require": {
@@ -7880,7 +7928,7 @@
                 "issues": "https://github.com/wtolk/adfm-elfinder/issues",
                 "source": "https://github.com/wtolk/adfm-elfinder/tree/master"
             },
-            "time": "2021-05-24T16:46:18+00:00"
+            "time": "2021-06-08T08:12:30+00:00"
         },
         {
             "name": "wtolk/crud",
@@ -7888,12 +7936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wtolk/crud.git",
-                "reference": "e3321aeedd5d18e4382fe2d63ad4b393d0ff2a4e"
+                "reference": "676a88047d2acc1fe1a2d63af063001324594184"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wtolk/crud/zipball/e3321aeedd5d18e4382fe2d63ad4b393d0ff2a4e",
-                "reference": "e3321aeedd5d18e4382fe2d63ad4b393d0ff2a4e",
+                "url": "https://api.github.com/repos/wtolk/crud/zipball/676a88047d2acc1fe1a2d63af063001324594184",
+                "reference": "676a88047d2acc1fe1a2d63af063001324594184",
                 "shasum": ""
             },
             "require": {
@@ -7929,7 +7977,7 @@
                 "issues": "https://github.com/wtolk/crud/issues",
                 "source": "https://github.com/wtolk/crud/tree/master"
             },
-            "time": "2021-06-09T02:55:11+00:00"
+            "time": "2021-06-16T07:49:05+00:00"
         },
         {
             "name": "wtolk/eloquent-query-filter",
@@ -8115,16 +8163,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "508d80f91de953617977e5666f8953669b6e81f2"
+                "reference": "43688227bbf27c43bc1ad83af224f135b6ef0ff4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/508d80f91de953617977e5666f8953669b6e81f2",
-                "reference": "508d80f91de953617977e5666f8953669b6e81f2",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/43688227bbf27c43bc1ad83af224f135b6ef0ff4",
+                "reference": "43688227bbf27c43bc1ad83af224f135b6ef0ff4",
                 "shasum": ""
             },
             "require": {
@@ -8188,7 +8236,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-06-03T21:41:42+00:00"
+            "time": "2021-06-11T06:57:25+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -9869,16 +9917,16 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "5.0.2",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455"
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/a90ccbddffa067b51f574dea6eb25d5680839455",
-                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/23bd5951f7ff26f12d4e3242864df3e08dec4e49",
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49",
                 "shasum": ""
             },
             "require": {
@@ -9921,7 +9969,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.2"
+                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.3"
             },
             "funding": [
                 {
@@ -9929,7 +9977,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-26T15:55:19+00:00"
+            "time": "2021-06-11T13:31:12+00:00"
         },
         {
             "name": "sebastian/lines-of-code",
@@ -10220,16 +10268,16 @@
         },
         {
             "name": "sebastian/type",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1"
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/0d1c587401514d17e8f9258a27e23527cb1b06c1",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/b8cd8a1c753c90bc1a0f5372170e3e489136f914",
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914",
                 "shasum": ""
             },
             "require": {
@@ -10264,7 +10312,7 @@
             "homepage": "https://github.com/sebastianbergmann/type",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
-                "source": "https://github.com/sebastianbergmann/type/tree/2.3.2"
+                "source": "https://github.com/sebastianbergmann/type/tree/2.3.4"
             },
             "funding": [
                 {
@@ -10272,7 +10320,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-04T13:02:07+00:00"
+            "time": "2021-06-15T12:49:02+00:00"
         },
         {
             "name": "sebastian/version",
@@ -10381,7 +10429,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "wtolk/adfm": 20
+        "wtolk/adfm": 20,
+        "wtolk/adfm-catalog": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

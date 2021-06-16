@@ -64,78 +64,26 @@
             </div>
             <div class="section__content">
                 <div class="row">
+                    @foreach ($products as $product)
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="product">
                             <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
+                                <a href="{{route('adfm.show.product', $product)}}">
+                                <div class="product__name">{{$product->title}}</div>
+                                <div class="product__price">{{$product->price}} руб.</div>
+                                <a href="{{route('adfm.show.product', $product)}}"><button class="button product__button">Подробнее</button></a>
+                                </a>
                             </div>
                             <div class="product__image">
-                                <img src="../images/banka2.png">
+                                <a href="{{route('adfm.show.product', $product)}}">
+                                @if (count($product->files) > 0)
+                                    {!! ImageCache::get($product->files[0], ['w' => 157, 'h' => 190, 'fit' => 'crop']); !!}
+                                @endif
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="product">
-                            <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
-                            </div>
-                            <div class="product__image">
-                                <img src="../images/banka2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="product">
-                            <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
-                            </div>
-                            <div class="product__image">
-                                <img src="../images/banka2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="product">
-                            <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
-                            </div>
-                            <div class="product__image">
-                                <img src="../images/banka2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="product">
-                            <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
-                            </div>
-                            <div class="product__image">
-                                <img src="../images/banka2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="product">
-                            <div class="product__info">
-                                <div class="product__name">Мясо кур в собственном соку</div>
-                                <div class="product__price">145 руб.</div>
-                                <a href=""><button class="button product__button">Подробнее</button></a>
-                            </div>
-                            <div class="product__image">
-                                <img src="../images/banka2.png">
-                            </div>
-                        </div>
-                    </div>
+                    </div>  
+                    @endforeach
                 </div>
             </div>
         </div>
