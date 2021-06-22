@@ -13,13 +13,15 @@
                     <div class="prod-p__image">
                         @if (count($product->files) > 0)
                             {!! ImageCache::get($product->files[0], ['w' => 630, 'h' => 414, 'fit' => 'crop']); !!}
+                        @else
+                            <img src="{{asset('images/dem3 2.jpg')}}" alt="Изображение отсутствует">
                         @endif
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
                     <div class="prod-p__descr">
                         {!! $product->content !!}
-                        <button class="button prod-p__button">Оформить заказ</button>
+                        <button class="button prod-p__button" data-hystmodal="#modal">Оформить заказ</button>
                     </div>
                 </div>
             </div>

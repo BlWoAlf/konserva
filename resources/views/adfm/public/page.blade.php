@@ -20,7 +20,7 @@
                             <div class="gallary__image">
                                 {!! ImageCache::get($file, ['w' => 190, 'h' => 226, 'fit' => 'crop'])->alt($file->original_name) !!}
                             </div>
-                            <div class="gallary__descr">подпись</div>
+                            <div class="gallary__descr">{{ $file->original_name }}</div>
                         </div>
                     </div>
                     @endforeach

@@ -4,7 +4,19 @@
 @section('content')
     <section class="section section__slider">
         <div class="section__content section__wrap">
-            <div class="slider"></div>
+            <div class="slider">
+                @if(count($page->files) > 0)
+                <div class="swiper-wrapper">
+                    @foreach ($page->files as $file)
+                    <div class="swiper-slide">
+                        {!! ImageCache::get($file, ['w' => 1920, 'h' => 600, 'fit' => 'crop'])->alt($file->original_name) !!}
+                    </div>
+                    @endforeach
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                @endif
+            </div>
         </div>
     </section>
     <section class="section section__garant">

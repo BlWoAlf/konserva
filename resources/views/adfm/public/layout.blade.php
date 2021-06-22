@@ -23,7 +23,7 @@
                 <div class="contacts header__contacts">
                     <div class="contacts__address">г. Абакан ул. Павших Коммунаров 50</div>
                     <div class="contacts__phone">Телефон доставки : <a class="contacts__phone contacts__phone-a" href="tel:+79083001020">+7 908 300 10 20</a></div>
-                    <button class="button contacts__button feedback-button">Обратный звонок</button>
+                    <button class="button contacts__button feedback-button" data-hystmodal="#modal">Обратный звонок</button>
                 </div>
             </div>
         </div>
@@ -95,5 +95,6 @@
         </div>
     </footer>
 <script src="{{asset('js/app.js')}}"></script>
+<x-adfm::feedback id='modal' />
 </body>
 </html>

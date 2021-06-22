@@ -24,8 +24,9 @@ class PageController extends Controller
     public function showMainPage()
     {
         $products = Product::inRandomOrder()->limit(6)->get();
+        $page = Page::where('id', 1)->firstOrFail();
 
-        return view('adfm::public.index', compact('products'));
+        return view('adfm::public.index', compact('page', 'products'));
     }
 
     public function showPage($slug)

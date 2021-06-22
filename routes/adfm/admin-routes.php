@@ -9,6 +9,7 @@ Route::prefix('/admin')->middleware(['web', 'auth'])->namespace('App\Http\Contro
         Route::get('/pages/{id}/edit', 'PageController@edit')->name('adfm.pages.edit');
         Route::match(['put', 'patch'],'/pages/{id}', 'PageController@update')->name('adfm.pages.update');
         Route::delete('/pages/{id}', 'PageController@destroy')->name('adfm.pages.destroy');
+        Route::get('/pages/{id}', 'PageController@restore')->name('adfm.pages.restore');
 //Route::get('/pages/{id}/clone', 'PageController@clone');
 
 
@@ -51,6 +52,16 @@ Route::prefix('/admin')->middleware(['web', 'auth'])->namespace('App\Http\Contro
         Route::get('/users/{id}/edit', 'UserController@edit')->name('adfm.users.edit');
         Route::match(['put', 'patch'],'/users/{id}', 'UserController@update')->name('adfm.users.update');
         Route::delete('/users/{id}', 'UserController@destroy')->name('adfm.users.destroy');
+
+    /* Роуты блоков */
+
+        Route::get('/blocks', 'BlockController@index')->name('adfm.blocks.index');
+        Route::get('/blocks/create', 'BlockController@create')->name('adfm.blocks.create');
+        Route::post('blocks', 'BlockController@store')->name('adfm.blocks.store');
+        Route::get('/blocks/{id}/edit', 'BlockController@edit')->name('adfm.blocks.edit');
+        Route::match(['put', 'patch'],'/blocks/{id}', 'BlockController@update')->name('adfm.blocks.update');
+        Route::delete('/blocks/{id}', 'BlockController@destroy')->name('adfm.blocks.destroy');
+        
 
         /* Роуты для сообщений */
 

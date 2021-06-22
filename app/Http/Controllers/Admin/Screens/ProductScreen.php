@@ -117,7 +117,7 @@ class ProductScreen
                 Input::make('product.title')->title('Название')->required(),
                 Input::make('product.price')->required()->defaultValue(0)->title('Цена'),
                 Input::make('product.article')->title('Артикул')->placeholder('6230i'),
-                Summernote::make('product.content')->title('Описание товара'),
+                TinyMCE::make('product.content')->title('Описание товара'),
                 MultiFile::make('product.files')->title('картинки')->preview()
             ]),
             Column::make([

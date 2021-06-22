@@ -1,5 +1,10 @@
 require('./bootstrap');
 
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, { Autoplay } from 'swiper/core';
+SwiperCore.use([Autoplay]);
+
 $(function(){
     var openPhotoSwipe = function(index){
         var pswpElement = document.querySelectorAll('.pswp')[0];
@@ -53,5 +58,14 @@ $(function(){
 
     $('.header__burger-button').click(function(){        
         drawer.open();
+    });
+
+    const swiper = new Swiper('.slider', {
+        loop: true,
+        speed: 900,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 9000,
+        },
     });
 });
